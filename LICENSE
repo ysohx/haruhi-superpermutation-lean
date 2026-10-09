@@ -1,0 +1,12 @@
+Upstream attribution and licensing
+=================================
+
+Adapted Hunter code retains its original Apache 2.0 notice; the complete license
+is LICENSES/Hunter-Apache-2.0.txt.
+
+Adapted preimage-chain code is attributed in README.md and Terminal.lean; its
+upstream CC BY 4.0 license is LICENSES/PreimageChain-CC-BY-4.0.txt.
+
+The upstream repositories and exact source revisions are identified in README.md.
+Those notices and license files must be retained with the corresponding adapted
+material. No license change to upstream material is asserted by this project.

@@ -1,0 +1,16 @@
+name = "haruhi_lower_bound"
+version = "0.1.0"
+defaultTargets = ["Haruhi"]
+
+[[require]]
+name = "preimage_chain_lower_bounds"
+git = "https://github.com/Haruhiyuki/superpermutations-preimage-chain-lower-bounds.git"
+rev = "8474c74a15fa59b8ce55bcf6bceaaa23b9a3dca8"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+
+[[lean_lib]]
+name = "Haruhi"

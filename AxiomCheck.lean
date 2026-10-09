@@ -1,0 +1,7 @@
+import Haruhi.Main
+#print axioms Haruhi.reduced_hamiltonian_fourteen_lower_bound
+#print axioms Haruhi.superpermutation_fourteen_lower_bound
+#print axioms Haruhi.minimum_superpermutation_fourteen_lower_bound
+#print Haruhi.superpermutation_fourteen_lower_bound
+#print Hunter.IsSuperperm
+#print Hunter.IsPermWord
