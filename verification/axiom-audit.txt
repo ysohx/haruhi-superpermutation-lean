@@ -1,0 +1,12 @@
+'Haruhi.reduced_hamiltonian_fourteen_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Haruhi.superpermutation_fourteen_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Haruhi.minimum_superpermutation_fourteen_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem Haruhi.superpermutation_fourteen_lower_bound : ∀ (w : List ℕ),
+  Hunter.IsSuperperm 14 w → 93890701078 ≤ w.length :=
+fun w hw =>
+  Haruhi.superpermutation_word_bound_of_reduced (of_decide_eq_true (id (Eq.refl true)))
+    Haruhi.reduced_hamiltonian_fourteen_lower_bound hw
+def Hunter.IsSuperperm : ℕ → List ℕ → Prop :=
+fun k w => ∀ (v : List ℕ), Hunter.IsPermWord k v → v <:+: w
+def Hunter.IsPermWord : ℕ → List ℕ → Prop :=
+fun k w => w.Nodup ∧ w.toFinset = Finset.Icc 1 k
